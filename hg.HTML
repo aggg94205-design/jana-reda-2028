@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>تعلم اللغات | مركز تعليم اللغات</title>
+<meta name="description" content="مركز «تعلم اللغات»: كورسات إنجليزي وفرنسي وألماني لجميع المستويات، أونلاين وحضوري، مع اختبار تحديد مستوى ومتابعة للطلاب.">
+<meta name="theme-color" content="#1d4ed8">
+<link rel="icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxZDRlZDgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwZWE1ZTkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnKSIvPjx0ZXh0IHg9IjI1NiIgeT0iMzMwIiBmb250LXNpemU9IjI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+MjTwvdGV4dD48L3N2Zz4K" type="image/svg+xml">
+<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA1MTIgNTEyIj48ZGVmcz48bGluZWFyR3JhZGllbnQgaWQ9ImciIHgxPSIwIiB5MT0iMCIgeDI9IjEiIHkyPSIxIj48c3RvcCBvZmZzZXQ9IjAiIHN0b3AtY29sb3I9IiMxZDRlZDgiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiMwZWE1ZTkiLz48L2xpbmVhckdyYWRpZW50PjwvZGVmcz48cmVjdCB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgZmlsbD0idXJsKCNnKSIvPjx0ZXh0IHg9IjI1NiIgeT0iMzMwIiBmb250LXNpemU9IjI0MCIgdGV4dC1hbmNob3I9Im1pZGRsZSI+8J+MjTwvdGV4dD48L3N2Zz4K">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+<style>
+/* المتغيرات والأساسيات */
+:root{--p:#1d4ed8;--p2:#0ea5e9;--bg:#f8fafc;--tx:#0f172a;--mu:#64748b;--card:#fff;--br:#e2e8f0;--wa:#16a34a}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{font-family:Tajawal,Segoe UI,Tahoma,sans-serif;background:var(--bg);color:var(--tx);line-height:1.7;padding-bottom:env(safe-area-inset-bottom)}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1100px;margin:auto;padding:0 16px}
+.sec{padding:48px 16px}.band{background:#eef4ff}
+h2{font-size:1.7rem;margin-bottom:16px;font-weight:800}.sub{color:var(--mu);max-width:700px;margin-bottom:16px}.muted{color:var(--mu);font-size:.9rem}
+.btn{display:inline-block;background:var(--p);color:#fff;border:0;border-radius:12px;padding:12px 22px;font:inherit;font-weight:700;cursor:pointer;transition:.2s}
+.btn:hover{transform:translateY(-2px);box-shadow:0 6px 16px #1d4ed84d}
+.btn.sm{padding:6px 14px}.btn.wa{background:var(--wa)}.btn.ghost{background:#e0e7ff;color:var(--p)}
+.card{background:var(--card);border:1px solid var(--br);border-radius:16px;padding:18px}
+/* splash */
+#splash{position:fixed;inset:0;background:linear-gradient(135deg,var(--p),var(--p2));color:#fff;display:grid;place-items:center;z-index:99;font-size:3rem;text-align:center;transition:opacity .5s}
+#splash b{display:block;font-size:1.5rem}#splash.off{opacity:0;pointer-events:none}
+/* header */
+.hdr{position:sticky;top:0;background:#fffffff2;backdrop-filter:blur(8px);border-bottom:1px solid var(--br);z-index:20;padding-top:env(safe-area-inset-top)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{font-weight:800;font-size:1.2rem;color:var(--p)}
+nav{display:flex;gap:18px;align-items:center}nav a{font-weight:500}nav a:hover{color:var(--p)}
+.burger{display:none;background:none;border:0;font-size:1.6rem;cursor:pointer}
+@media(max-width:820px){.burger{display:block}nav{display:none;position:absolute;top:60px;inset-inline:0;background:#fff;flex-direction:column;padding:16px;border-bottom:1px solid var(--br)}body.menu nav{display:flex}}
+/* hero */
+.hero{background:linear-gradient(135deg,#1e3a8a,var(--p) 55%,var(--p2));color:#fff}
+.hero-in{display:grid;grid-template-columns:1.2fr 1fr;gap:24px;align-items:center;padding:60px 16px}
+.hero h1{font-size:clamp(1.9rem,5vw,3rem);line-height:1.3;margin-bottom:12px}.hero p{opacity:.92;margin-bottom:20px}
+.cta{display:flex;gap:12px;flex-wrap:wrap}.hero .btn:not(.wa){background:#fff;color:var(--p)}
+.art{position:relative;height:240px;display:grid;place-items:center}.art i{font-size:7rem;font-style:normal;animation:fl 4s ease-in-out infinite}
+.art span{position:absolute;background:#ffffff26;border:1px solid #ffffff59;border-radius:20px;padding:4px 14px;font-weight:700;animation:fl 5s ease-in-out infinite}
+.art span:nth-child(1){top:10%;right:5%}.art span:nth-child(2){top:20%;left:5%;animation-delay:1s}.art span:nth-child(3){bottom:12%;right:10%;animation-delay:2s}.art span:nth-child(4){bottom:20%;left:10%;animation-delay:.5s}
+@keyframes fl{50%{transform:translateY(-10px)}}
+@media(max-width:820px){.hero-in{grid-template-columns:1fr}.art{height:150px}.art i{font-size:4.5rem}}
+/* filters + grid */
+.filters{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-bottom:20px}
+input,select,textarea{font:inherit;padding:10px 12px;border:1px solid var(--br);border-radius:10px;background:#fff;width:100%}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px}
+.cc{padding:0;overflow:hidden;transition:.25s;animation:in .5s both}.cc:hover{transform:translateY(-4px);box-shadow:0 10px 24px #0f172a1a}
+.cc .im{height:110px;display:grid;place-items:center;font-size:3rem;position:relative;color:#fff}
+.cc .bd{padding:16px;display:grid;gap:8px}.cc h3{font-size:1.1rem}
+.tags{display:flex;flex-wrap:wrap;gap:6px}.tags span{background:#eef2ff;color:var(--p);border-radius:8px;padding:1px 9px;font-size:.8rem}
+.st{position:absolute;top:8px;inset-inline-start:8px;font-size:.75rem;background:#fff;color:var(--tx);border-radius:8px;padding:1px 9px;font-weight:700}
+.pr{font-weight:800;color:var(--p)}
+@keyframes in{from{opacity:0;transform:translateY(12px)}}
+/* features, faq, contact */
+.feats{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:14px}.feats .card{text-align:center;font-weight:700}.feats em{display:block;font-size:2rem;font-style:normal}
+.stars{color:#f59e0b}
+.faqs{display:grid;gap:10px}details{background:#fff;border:1px solid var(--br);border-radius:12px;padding:12px 16px}summary{cursor:pointer;font-weight:700}details p{margin-top:8px;color:var(--mu)}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:16px}.contact form,.contact .card{display:grid;gap:10px;align-content:start}
+@media(max-width:700px){.contact{grid-template-columns:1fr}}
+footer{background:#0f172a;color:#cbd5e1;text-align:center;padding:20px 0 90px}
+/* quiz */
+.quiz .opt{display:block;width:100%;text-align:start;margin:8px 0;background:#fff;color:var(--tx);border:1px solid var(--br)}.quiz .opt:hover{border-color:var(--p)}
+.bar{height:6px;background:var(--br);border-radius:6px;margin-bottom:12px}.bar i{display:block;height:100%;background:var(--p);border-radius:6px}
+/* floating */
+.fab{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom));width:56px;height:56px;border-radius:50%;border:0;display:grid;place-items:center;font-size:1.6rem;color:#fff;cursor:pointer;box-shadow:0 6px 18px #0003;z-index:30}
+.wa-fab{background:var(--wa);inset-inline-start:16px}.bot-fab{background:var(--p);inset-inline-end:16px}
+/* bot */
+.bot{position:fixed;bottom:84px;inset-inline-end:16px;width:min(360px,calc(100vw - 32px));height:min(480px,70vh);background:#fff;border-radius:18px;box-shadow:0 10px 40px #0004;display:flex;flex-direction:column;z-index:40;overflow:hidden}
+.bot[hidden]{display:none}
+.bot-h{background:var(--p);color:#fff;padding:12px 16px;display:flex;justify-content:space-between}.bot-h button{background:none;border:0;color:#fff;font-size:1.1rem;cursor:pointer}
+.msgs{flex:1;overflow:auto;padding:12px;display:flex;flex-direction:column;gap:8px}
+.m{max-width:85%;padding:8px 12px;border-radius:14px;background:#f1f5f9;white-space:pre-line}.m.u{background:var(--p);color:#fff;align-self:flex-end}
+.quick{display:flex;gap:6px;flex-wrap:wrap;padding:0 12px 8px}.quick button{background:#eef2ff;color:var(--p);border:0;border-radius:14px;padding:4px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.bot-f{display:flex;gap:6px;padding:8px;border-top:1px solid var(--br)}
+/* modal */
+.modal{position:fixed;inset:0;background:#0f172a99;display:grid;place-items:center;z-index:50;padding:12px}.modal[hidden]{display:none}
+.mbox{background:#fff;border-radius:18px;max-width:640px;width:100%;max-height:92vh;overflow:auto;padding:22px;display:grid;gap:10px}
+.mbox ul{padding-inline-start:20px}.row{display:flex;gap:10px;flex-wrap:wrap}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+
+</style>
+</head>
+<body>
+<div id="splash"><div>🌍<b>تعلم اللغات</b></div></div>
+
+<header class="hdr"><div class="wrap nav">
+  <a class="logo" href="#home"><span>🌍</span> تعلم اللغات</a>
+  <button class="burger" aria-label="القائمة" onclick="document.body.classList.toggle('menu')">☰</button>
+  <nav id="menu">
+    <a href="#home">الرئيسية</a><a href="#courses">الكورسات</a><a href="#about">عن المركز</a>
+    <a href="#why">لماذا تعلم اللغات؟</a><a href="#faq">الأسئلة الشائعة</a><a href="#contact">تواصل معنا</a>
+    <button id="installBtn" class="btn sm" hidden>📱 تثبيت التطبيق</button>
+  </nav>
+</div></header>
+
+<main>
+<section id="home" class="hero"><div class="wrap hero-in">
+  <div>
+    <h1>طوّر لغتك... ووسّع مستقبلك</h1>
+    <p>مركز «تعلم اللغات» يقدم كورسات إنجليزي وفرنسي وألماني بأسلوب حديث ومتابعة حقيقية لكل طالب، أونلاين وحضوري.</p>
+    <div class="cta"><a class="btn" href="#courses">استعرض الكورسات</a><a class="btn wa" data-wa="مرحبًا، أريد الاستفسار عن الكورسات المتاحة في مركز تعلم اللغات.">تواصل معنا عبر واتساب</a></div>
+  </div>
+  <div class="art" aria-hidden="true"><span>Hello</span><span>Bonjour</span><span>Hallo</span><span>مرحبًا</span><i>🌍</i></div>
+</div></section>
+
+<section id="courses" class="wrap sec">
+  <h2>الكورسات</h2>
+  <div class="filters">
+    <input id="q" type="search" placeholder="🔍 ابحث عن كورس...">
+    <select id="fLang"></select><select id="fLevel"></select><select id="fType"></select>
+    <select id="fPrice"><option value="">كل الأسعار</option><option value="0-700">حتى 700 ج</option><option value="701-1200">701 – 1200 ج</option><option value="1201-99999">أكثر من 1200 ج</option></select>
+    <select id="fStatus"></select>
+  </div>
+  <div id="grid" class="grid"></div>
+</section>
+
+<section id="test" class="band"><div class="wrap sec">
+  <h2>اختبر مستواك في اللغة</h2>
+  <p class="sub">أسئلة قصيرة (إنجليزي) تعطيك مستوى تقريبيًا واقتراح الكورس المناسب.</p>
+  <div id="quiz" class="card quiz"><button class="btn" onclick="startQuiz()">ابدأ الاختبار</button></div>
+</div></section>
+
+<section id="why" class="wrap sec">
+  <h2>لماذا تعلم اللغات؟</h2>
+  <div class="feats" id="feats"></div>
+</section>
+
+<section id="about" class="band"><div class="wrap sec">
+  <h2>عن المركز</h2>
+  <p class="sub">«تعلم اللغات» مركز متخصص في تعليم اللغات للطلاب وأولياء الأمور، نجمع بين مدربين متميزين ومحتوى منظم وأدوات حديثة لنصل بك إلى الطلاقة بثقة.</p>
+</div></section>
+
+<section class="wrap sec">
+  <h2>آراء الطلاب</h2>
+  <div class="grid" id="reviews"></div>
+</section>
+
+<section id="faq" class="band"><div class="wrap sec">
+  <h2>الأسئلة الشائعة</h2>
+  <div id="faqs" class="faqs"></div>
+</div></section>
+
+<section id="contact" class="wrap sec">
+  <h2>تواصل معنا</h2>
+  <div class="contact">
+    <div class="card"><p>📞 <b dir="ltr">01279580844</b></p>
+      <a class="btn wa" data-wa="مرحبًا، أريد الاستفسار عن الكورسات المتاحة في مركز تعلم اللغات.">راسلنا على واتساب</a>
+      <p class="muted">البريد والعنوان وروابط التواصل: تُضاف لاحقًا.</p></div>
+    <form id="cf" class="card" onsubmit="return sendForm(event)">
+      <input name="n" placeholder="الاسم" required maxlength="60">
+      <input name="p" placeholder="رقم الهاتف" required inputmode="tel" maxlength="20">
+      <textarea name="m" placeholder="رسالتك" required maxlength="500" rows="3"></textarea>
+      <button class="btn">إرسال عبر واتساب</button>
+    </form>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">© تعلم اللغات — جميع الحقوق محفوظة</div></footer>
+
+<!-- أزرار عائمة -->
+<a class="fab wa-fab" data-wa="مرحبًا، أريد الاستفسار عن الكورسات المتاحة في مركز تعلم اللغات." aria-label="واتساب">💬</a>
+<button class="fab bot-fab" onclick="toggleBot()" aria-label="المساعد الذكي">🤖</button>
+
+<!-- المساعد الذكي -->
+<div id="bot" class="bot" hidden>
+  <div class="bot-h"><b>مساعد تعلم اللغات</b><button onclick="toggleBot()">✕</button></div>
+  <div id="msgs" class="msgs"></div>
+  <div id="quick" class="quick"></div>
+  <form class="bot-f" onsubmit="return botSend(event)"><input id="bi" placeholder="اكتب سؤالك..." autocomplete="off"><button class="btn sm">إرسال</button></form>
+</div>
+
+<!-- نافذة تفاصيل الكورس -->
+<div id="modal" class="modal" hidden onclick="if(event.target===this)closeModal()"><div class="mbox" id="mbox"></div></div>
+
+<script>
+/* بيانات الموقع منفصلة عن الواجهة — عدّلها هنا فقط (لاحقًا تُستبدل بـ API للوحة التحكم) */
+window.SITE = {
+  phone: "201279580844", // رقم واتساب بالصيغة الدولية
+  courses: [
+    {id:1,name:"الإنجليزية للمبتدئين",lang:"الإنجليزية",level:"A1",type:"جماعي",duration:"8 أسابيع",lectures:16,mode:"أونلاين",price:600,status:"متاح",emoji:"🇬🇧",color:"#2563eb",desc:"ابدأ رحلتك من الصفر مع أساسيات المحادثة والقواعد.",goals:["نطق سليم للحروف والكلمات","محادثات يومية بسيطة"],skills:["المحادثة","الاستماع","المفردات"],req:"لا يوجد",schedule:"السبت والثلاثاء 6 مساءً",trainer:"أ. سارة أحمد"},
+    {id:2,name:"الإنجليزية المتوسطة",lang:"الإنجليزية",level:"B1",type:"جماعي",duration:"10 أسابيع",lectures:20,mode:"حضوري",price:750,status:"متاح",emoji:"📘",color:"#0d9488",desc:"طوّر طلاقتك وقواعدك للتعبير بثقة في مواقف متنوعة.",goals:["التحدث بطلاقة","كتابة رسائل وفقرات"],skills:["القواعد","الكتابة","المحادثة"],req:"مستوى A2",schedule:"الأحد والأربعاء 5 مساءً",trainer:"أ. محمد علي"},
+    {id:3,name:"IELTS التحضيري",lang:"الإنجليزية",level:"B2",type:"مكثف",duration:"12 أسبوعًا",lectures:24,mode:"أونلاين",price:1500,status:"متاح",emoji:"🎓",color:"#7c3aed",desc:"تحضير شامل لاختبار الآيلتس مع اختبارات تجريبية.",goals:["رفع الدرجة إلى 6.5+","إتقان استراتيجيات الاختبار"],skills:["Reading","Writing","Speaking","Listening"],req:"مستوى B1",schedule:"الاثنين والخميس 7 مساءً",trainer:"أ. منى حسن"},
+    {id:4,name:"الفرنسية للمبتدئين",lang:"الفرنسية",level:"A1",type:"جماعي",duration:"8 أسابيع",lectures:16,mode:"أونلاين",price:700,status:"قريبًا",emoji:"🇫🇷",color:"#e11d48",desc:"تعلّم الفرنسية بأسلوب ممتع من التحية حتى الحوار اليومي.",goals:["نطق فرنسي صحيح","تكوين جمل بسيطة"],skills:["النطق","المفردات"],req:"لا يوجد",schedule:"يُعلن قريبًا",trainer:"أ. نادين كمال"},
+    {id:5,name:"الألمانية A2",lang:"الألمانية",level:"A2",type:"جماعي",duration:"10 أسابيع",lectures:20,mode:"حضوري",price:900,status:"مكتمل",emoji:"🇩🇪",color:"#d97706",desc:"خطوة قوية نحو الألمانية للدراسة والعمل.",goals:["فهم النصوص القصيرة","حوارات يومية"],skills:["القواعد","المحادثة"],req:"مستوى A1",schedule:"اكتمل العدد",trainer:"أ. كريم فؤاد"},
+    {id:6,name:"محادثة إنجليزية خاصة",lang:"الإنجليزية",level:"C1",type:"خاص",duration:"6 أسابيع",lectures:12,mode:"أونلاين",price:null,status:"متاح",emoji:"💬",color:"#059669",desc:"جلسات فردية مخصصة لصقل الطلاقة والثقة.",goals:["طلاقة متقدمة","التحدث الاحترافي"],skills:["المحادثة","العروض التقديمية"],req:"مستوى B2",schedule:"حسب اتفاقك مع المدرب",trainer:"أ. سارة أحمد"}
+  ],
+  faqs: [
+    ["ما الكورسات المتاحة؟","نقدم الإنجليزية والفرنسية والألمانية بمستويات من A1 إلى C1، وكورسات IELTS والمحادثة."],
+    ["كيف أعرف المستوى المناسب لي؟","جرّب قسم «اختبر مستواك» أو اسأل المساعد الذكي."],
+    ["هل توجد كورسات للمبتدئين؟","نعم، كورسات A1 لا تتطلب أي معرفة مسبقة."],
+    ["كيف يمكنني التسجيل؟","اضغط «احجز الكورس الآن» في صفحة الكورس أو تواصل معنا عبر واتساب."],
+    ["هل توجد دراسة أونلاين؟","نعم، معظم الكورسات متاحة أونلاين وبعضها حضوري."],
+    ["هل يمكن تثبيت الموقع كتطبيق؟","نعم، اضغط زر «📱 تثبيت التطبيق» عند ظهوره في متصفحك."]
+  ],
+  reviews: [
+    {name:"أحمد م.",stars:5,text:"شرح ممتاز ومتابعة حقيقية، تحسّن مستواي بسرعة."},
+    {name:"ولي أمر: هالة ع.",stars:5,text:"ابني أصبح يحب الإنجليزية، والتواصل مع المركز سهل جدًا."},
+    {name:"مريم س.",stars:4,text:"اختبار المستوى ساعدني أختار الكورس المناسب من أول مرة."}
+  ]
+};
+
+/* منطق الموقع — يعتمد على window.SITE من data/site-data.js */
+const S=SITE,$=s=>document.querySelector(s);
+const esc=t=>String(t).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const waLink=t=>`https://wa.me/${S.phone}?text=${encodeURIComponent(t)}`;
+const uniq=k=>[...new Set(S.courses.map(c=>c[k]))];
+
+/* شاشة التحميل */
+addEventListener('load',()=>setTimeout(()=>$('#splash').classList.add('off'),600));
+
+/* روابط واتساب */
+document.querySelectorAll('[data-wa]').forEach(a=>{a.href=waLink(a.dataset.wa);a.target='_blank';a.rel='noopener'});
+document.querySelectorAll('nav a').forEach(a=>a.onclick=()=>document.body.classList.remove('menu'));
+
+/* المميزات */
+$('#feats').innerHTML=[["🧑‍🏫","تعليم بطريقة حديثة"],["📚","كورسات لمختلف المستويات"],["👀","متابعة للطلاب"],["🗂️","محتوى تعليمي منظم"],["💬","تواصل سهل"],["🤖","مساعد ذكي"],["🎯","اختبار تحديد المستوى"]].map(f=>`<div class="card"><em>${f[0]}</em>${f[1]}</div>`).join('');
+
+/* آراء الطلاب */
+$('#reviews').innerHTML=S.reviews.map(r=>`<div class="card"><b>👤 ${esc(r.name)}</b><div class="stars">${'★'.repeat(r.stars)}${'☆'.repeat(5-r.stars)}</div><p>${esc(r.text)}</p></div>`).join('');
+
+/* الأسئلة الشائعة */
+$('#faqs').innerHTML=S.faqs.map(f=>`<details><summary>${esc(f[0])}</summary><p>${esc(f[1])}</p></details>`).join('');
+
+/* الفلاتر */
+const fill=(id,label,arr)=>$(id).innerHTML=`<option value="">${label}</option>`+arr.map(v=>`<option>${esc(v)}</option>`).join('');
+fill('#fLang','كل اللغات',uniq('lang'));fill('#fLevel','كل المستويات',uniq('level'));fill('#fType','كل الأنواع',uniq('type'));fill('#fStatus','كل الحالات',uniq('status'));
+['#q','#fLang','#fLevel','#fType','#fPrice','#fStatus'].forEach(s=>$(s).addEventListener('input',renderCourses));
+
+function renderCourses(){
+  const q=$('#q').value.trim(),[a,b]=($('#fPrice').value||'').split('-').map(Number);
+  const list=S.courses.filter(c=>(!q||(c.name+c.lang+c.desc).includes(q))&&(!$('#fLang').value||c.lang===$('#fLang').value)&&(!$('#fLevel').value||c.level===$('#fLevel').value)&&(!$('#fType').value||c.type===$('#fType').value)&&(!$('#fStatus').value||c.status===$('#fStatus').value)&&(!a&&a!==0||(c.price!=null&&c.price>=a&&c.price<=b)));
+  $('#grid').innerHTML=list.map((c,i)=>`<article class="card cc" style="animation-delay:${i*60}ms">
+    <div class="im" style="background:${c.color}">${c.emoji}<span class="st">${esc(c.status)}</span></div>
+    <div class="bd"><h3>${esc(c.name)}</h3>
+    <div class="tags"><span>${esc(c.lang)}</span><span>${esc(c.level)}</span><span>${esc(c.type)}</span><span>${esc(c.mode)}</span></div>
+    <p class="muted">${esc(c.desc)}</p><p class="muted">⏱ ${esc(c.duration)} • 🎬 ${c.lectures} محاضرة</p>
+    <div class="pr">${c.price?c.price+' جنيه':'السعر عند التواصل'}</div>
+    <button class="btn ghost" onclick="openCourse(${c.id})">عرض تفاصيل الكورس</button></div></article>`).join('')||'<p class="muted">لا توجد نتائج مطابقة.</p>';
+}
+renderCourses();
+
+/* تفاصيل الكورس (نافذة) */
+function openCourse(id){
+  const c=S.courses.find(x=>x.id===id),ul=a=>'<ul>'+a.map(x=>`<li>${esc(x)}</li>`).join('')+'</ul>';
+  $('#mbox').innerHTML=`<div class="row" style="justify-content:space-between"><h2 style="margin:0">${c.emoji} ${esc(c.name)}</h2><button class="btn sm ghost" onclick="closeModal()">✕</button></div>
+  <div class="tags"><span>${esc(c.lang)}</span><span>${esc(c.level)}</span><span>${esc(c.status)}</span></div>
+  <p>${esc(c.desc)}</p><b>أهداف الكورس</b>${ul(c.goals)}<b>المهارات</b>${ul(c.skills)}
+  <p>📌 المستوى المطلوب: ${esc(c.req)}<br>⏱ المدة: ${esc(c.duration)} • 🎬 ${c.lectures} محاضرة<br>🏫 النظام: ${esc(c.type)} / ${esc(c.mode)}<br>🗓 المواعيد: ${esc(c.schedule)}<br>👩‍🏫 المدرب: ${esc(c.trainer)}<br>💰 السعر: ${c.price?c.price+' جنيه':'عند التواصل'}</p>
+  <details><summary>هل يناسبني هذا الكورس؟</summary><p>إن لم تكن متأكدًا، جرّب اختبار المستوى أو اسأل المساعد.</p></details>
+  <div class="row"><a class="btn" target="_blank" rel="noopener" href="${waLink('مرحبًا، أريد حجز كورس: '+c.name)}">احجز الكورس الآن</a>
+  <a class="btn wa" target="_blank" rel="noopener" href="${waLink('مرحبًا، أريد الاستفسار عن كورس: '+c.name)}">استفسر عبر واتساب</a></div>`;
+  $('#modal').hidden=false;
+}
+function closeModal(){$('#modal').hidden=true}
+addEventListener('keydown',e=>e.key==='Escape'&&closeModal());
+
+/* اختبار المستوى */
+const QZ=[
+ ["She ___ to school every day.",["go","goes","going"],1],
+ ["I have ___ apple.",["a","an","the"],1],
+ ["If I ___ rich, I would travel the world.",["am","was","were"],2],
+ ["He has lived here ___ 2015.",["for","since","from"],1],
+ ["The report ___ by the team yesterday.",["was written","wrote","has write"],0],
+ ["Hardly ___ arrived when it started raining.",["I had","had I","I have"],1]];
+let qi=0,qs=0;
+function startQuiz(){qi=0;qs=0;qShow()}
+function qShow(){
+  const q=QZ[qi];
+  $('#quiz').innerHTML=`<div class="bar"><i style="width:${qi/QZ.length*100}%"></i></div><b dir="ltr" style="display:block">${qi+1}/${QZ.length}: ${q[0]}</b>`+q[1].map((o,i)=>`<button class="btn opt" dir="ltr" onclick="qAns(${i})">${o}</button>`).join('');
+}
+function qAns(i){if(i===QZ[qi][2])qs++;qi++;qi<QZ.length?qShow():qEnd()}
+function qEnd(){
+  const lv=["A1","A2","B1","B2","C1","C2"][Math.min(5,Math.round(qs/QZ.length*5))];
+  const rec=S.courses.filter(c=>c.lang==="الإنجليزية"&&c.status!=="مكتمل"&&Math.abs(["A1","A2","B1","B2","C1","C2"].indexOf(c.level)-["A1","A2","B1","B2","C1","C2"].indexOf(lv))<=1);
+  $('#quiz').innerHTML=`<h3>مستواك التقريبي: <span style="color:var(--p)">${lv}</span> (${qs}/${QZ.length})</h3><p class="muted">نتيجة تقريبية، ويؤكدها المدرب عند التسجيل.</p>
+  <p><b>كورسات مقترحة:</b></p>`+(rec.map(c=>`<button class="btn opt" onclick="openCourse(${c.id})">${c.emoji} ${esc(c.name)} — ${c.level}</button>`).join('')||'<p>تواصل معنا لنرشح لك الأنسب.</p>')+
+  `<button class="btn" onclick="location.hash='#courses'">اعرف الكورس المناسب لك</button> <button class="btn ghost" onclick="startQuiz()">أعد الاختبار</button>`;
+}
+
+/* المساعد الذكي (قائم على قواعد بسيطة — يعمل بدون خادم) */
+const QUICK=["أريد تعلم الإنجليزية","أريد معرفة الكورسات","ما المستوى المناسب لي؟","أريد التواصل مع المركز"];
+function say(t,u){const d=document.createElement('div');d.className='m'+(u?' u':'');d.textContent=t;$('#msgs').append(d);$('#msgs').scrollTop=1e9;return d}
+function toggleBot(){const b=$('#bot');b.hidden=!b.hidden;if(!b.hidden&&!$('#msgs').children.length){say("مرحبًا بك في تعلم اللغات 👋\nكيف يمكنني مساعدتك؟");$('#quick').innerHTML=QUICK.map(q=>`<button onclick="botAsk(this.textContent)">${q}</button>`).join('')}}
+function botSend(e){e.preventDefault();const v=$('#bi').value.trim();if(v){botAsk(v);$('#bi').value=''}return false}
+function botAsk(t){
+  say(t,1);let r;const has=(...w)=>w.some(x=>t.includes(x));
+  const byLang=l=>S.courses.filter(c=>c.lang===l).map(c=>`• ${c.name} (${c.level}) — ${c.status}`).join('\n');
+  if(has('إنجليز','انجليز','english')) r="كورسات الإنجليزية:\n"+byLang("الإنجليزية")+"\nجرّب اختبار المستوى لتعرف الأنسب لك.";
+  else if(has('فرنس')) r="كورسات الفرنسية:\n"+byLang("الفرنسية");
+  else if(has('ألمان','المان')) r="كورسات الألمانية:\n"+byLang("الألمانية");
+  else if(has('كورس','متاح','اللغات')) r="الكورسات المتاحة:\n"+S.courses.map(c=>`• ${c.name} (${c.level}) — ${c.status}`).join('\n');
+  else if(has('مستوى','مستواي')) {r="المستويات من A1 (مبتدئ) إلى C2 (متقدم جدًا). سأنقلك لاختبار تحديد المستوى الآن.";setTimeout(()=>{$('#bot').hidden=true;location.hash='#test'},1200)}
+  else if(has('سعر','كام','تكلفة','بكام')) r="الأسعار تبدأ من "+Math.min(...S.courses.filter(c=>c.price).map(c=>c.price))+" جنيه، وتظهر داخل بطاقة كل كورس.";
+  else if(has('مبتد')) r="نعم! كورسات A1 لا تحتاج معرفة مسبقة، مثل «الإنجليزية للمبتدئين».";
+  else if(has('اونلاين','أونلاين','اون لاين')) r="نعم، معظم كورساتنا متاحة أونلاين.";
+  else if(has('تواصل','واتساب','رقم','تسجيل','حجز')) {r="يسعدنا تواصلك! سأفتح لك واتساب.";setTimeout(()=>open(waLink("مرحبًا، أريد الاستفسار عن الكورسات المتاحة في مركز تعلم اللغات."),'_blank'),800)}
+  else r="لم أفهم سؤالك تمامًا 🙏 يمكنك اختيار أحد الأسئلة السريعة أو التواصل معنا مباشرة عبر واتساب.";
+  setTimeout(()=>say(r),400);
+}
+
+/* نموذج التواصل → واتساب */
+function sendForm(e){e.preventDefault();const f=new FormData(e.target);
+  open(waLink(`الاسم: ${f.get('n')}\nالهاتف: ${f.get('p')}\nالرسالة: ${f.get('m')}`),'_blank');e.target.reset();return false}
+
+/* PWA: تسجيل Service Worker وزر التثبيت */
+if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('sw.js').catch(()=>{}));
+let dp;addEventListener('beforeinstallprompt',e=>{e.preventDefault();dp=e;$('#installBtn').hidden=false});
+$('#installBtn').onclick=async()=>{if(!dp)return;dp.prompt();await dp.userChoice;dp=null;$('#installBtn').hidden=true};
+addEventListener('appinstalled',()=>$('#installBtn').hidden=true);
+
+</script>
+</body>
+</html>
